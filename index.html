@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pomodorro Clock</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+    <h1>Pomodorro Study Aide</h1>
+    <div class="row" id="clockAdjust">
+        <div class="col">
+            <h3>Break Time</h3>
+            <input type="button" class="button" value="-" id="lessBreak" />
+            <input type="text" class="timervalue" id="breakClock" value="5" disabled/>
+            <input type="button" class="button" value="+" id="moreBreak" />
+        </div>
+        <div class="col">
+            <input type="button" value="Reset" id="reset" />
+        </div>
+        <div class="col">
+            <h3>Study Time</h3>
+            <input type="button" class="button" value="-" id="lessStudy" />
+            <input type="text" class="timervalue" id="studyClock" value="25" disabled/>
+            <input type="button" class="button" value="+" id="moreStudy" />
+        </div>
+    </div>
+    <div id="clock">
+        <button id="countdown" class="bigbutton">
+            <div id="study">Study Time</div>
+            <div id="break">Break Time</div>
+            <p id="timer"></p>
+        </button>
+    </div>
+</body>
+
+</html>
