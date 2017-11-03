@@ -137,10 +137,11 @@ function moreTime(clock) {
 
 function lessTime(clock) {
     var timerVal = clock.value;
-    timerVal -= 1;
-    clock.value = timerVal;
-    updateClock();
+    if (timerVal >= 1) {
+        timerVal -= 1;
+        clock.value = timerVal;
+        updateClock();
+    } else {
+        clock.value = timerVal;
+    }
 }
-
-
-
